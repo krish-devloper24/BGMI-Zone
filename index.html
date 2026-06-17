@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BGMI Battle Zone</title>
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">BGMI BATTLE ZONE</div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Ranks</a>
+        <a href="#">Weapons</a>
+        <a href="#">Events</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>WELCOME SOLDIER</h1>
+    <p>Drop • Loot • Survive • Chicken Dinner</p>
+
+    <button class="btn" onclick="joinGame()">
+        Start Mission
+    </button>
+    <div class="profile-card">
+    <h2>KRCRGaming</h2>
+    <p>Rank: Conqueror 👑</p>
+    <p>KD: 5.67</p>
+</div>
+<audio id="bgmiSound" src="bgmi-theme.mp3"></audio>
+
+<button onclick="playSound()">
+🔊 Play Theme
+</button>
+
+<div class="weapon-card">
+    <h3>M416</h3>
+    <p>Damage: 43</p>
+</div>
+
+<div class="weapon-card">
+    <h3>AKM</h3>
+    <p>Damage: 49</p>
+</div>
+</section>
+
+<section class="stats">
+
+<div class="card">
+    <h2>Kills</h2>
+    <div class="counter" id="kills">0</div>
+</div>
+
+<div class="card">
+    <h2>Wins</h2>
+    <div class="counter" id="wins">0</div>
+</div>
+
+<div class="card">
+    <h2>Rank</h2>
+    <div class="counter" id="rank">Ace</div>
+</div>
+
+</section>
+
+<footer>
+    KRRISH-RUSH.CLUTCH.GAMING © 2025
+</footer>
+
+<script src="script.js">
+
+</body>
+</html>

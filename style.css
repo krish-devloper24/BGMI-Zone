@@ -1,0 +1,122 @@
+body{
+    background:linear-gradient(
+    -45deg,
+    #111,
+    #ff9800,
+    #222,
+    #444
+    );
+
+    background-size:400% 400%;
+
+    animation:bgMove 10s infinite;
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#0d0d0d;
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:rgba(0,0,0,0.9);
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    color:#ff9800;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+}
+
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url(https://wallpapers.com/images/hd/bgmi-smoky-character-0251nvedwudnllfe.jpg);
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#ff9800;
+}
+
+.hero p{
+    margin:20px;
+    font-size:20px;
+}
+
+.btn{
+    background:#ff9800;
+    border:none;
+    padding:15px 35px;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.stats{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:50px;
+}
+
+.card{
+    background:#1b1b1b;
+    width:250px;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 0 15px rgba(255,152,0,.4);
+}
+
+.card h2{
+    color:#ff9800;
+}
+
+.counter{
+    font-size:40px;
+    margin-top:10px;
+}
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+}
